@@ -27,5 +27,3 @@ public class Q1{
 
 // Observation
 // For every max elements their won't be any elements greater than itself
-
-//change
