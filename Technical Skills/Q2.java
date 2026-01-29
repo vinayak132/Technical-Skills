@@ -44,10 +44,6 @@
 // Step 6: Compare 
 
 
-// Logic
-// if i==0 
-
-// 
 public class Q2 {
 
     public static void main(String[] args) {
@@ -60,7 +56,10 @@ public class Q2 {
         }
 
         for(int i=0; i<arrlen; i++){
-            
+            int ls,rs;
+            if(i==0){
+                
+            }
         }
         
         
