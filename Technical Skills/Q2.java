@@ -58,11 +58,18 @@ public class Q2 {
         for(int i=0; i<arrlen; i++){
             int ls,rs;
             if(i==0){
-                
+                ls=0;
             }
-        }
-        
-        
+            else{
+                ls=prefix[i-i];
+            }
 
+            rs=prefix[i-1]-prefix[i]
+
+            if(ls==rs){
+                count++;
+                System.out.println("Equilibrium index cound"i);
+            }
+        }  
     }
 }
