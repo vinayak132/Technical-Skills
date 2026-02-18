@@ -35,11 +35,41 @@
 //              5   3  -1   0
 
 
-// 
+
+// Step 1: Read the array and find the lenght
+// Step 2: Create a prefix sum array and store the cumulative sum of array
+// Step 3: Initialize count to 0
+// Step 4: Calculate the left sum of array 
+// Step 5: Calculate the right sum of array
+// Step 6: Compare 
+
+
 public class Q2 {
 
     public static void main(String[] args) {
         int arr[]={-3,2,4,-1};
+        int arrlen=arr.lenght;
+        int prefix[]=new int[arr];
+        int count=0;
+        for(int i=0;i<arrlen;i++){
+            prefix[i]=prefix[i]-prefix[i-1]
+        }
 
+        for(int i=0; i<arrlen; i++){
+            int ls,rs;
+            if(i==0){
+                ls=0;
+            }
+            else{
+                ls=prefix[i-i];
+            }
+
+            rs=prefix[i-1]-prefix[i]
+
+            if(ls==rs){
+                count++;
+                System.out.println("Equilibrium index cound"i);
+            }
+        }  
     }
 }
