@@ -40,6 +40,28 @@ public class Q2 {
 
     public static void main(String[] args) {
         int arr[]={-3,2,4,-1};
+        int arrlen=arr.length;
+        int prefix[]=new int[arrlen];
+        int count=0;
+        for(int i=0;i<arrlen;i++){
+            prefix[i]=prefix[i]-prefix[i-1];
+        }
 
+        for(int i=0; i<arrlen; i++){
+            int ls,rs;
+            if(i==0){
+                ls=0;
+            }
+            else{
+                ls=prefix[i-i];
+            }
+
+            rs=prefix[i-1]-prefix[i];
+
+            if(ls==rs){
+                count++;
+                System.out.println("Equilibrium index cound"+i);
+            }
+        }  
     }
 }
